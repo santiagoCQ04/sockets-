@@ -16,8 +16,8 @@ const socketController = (socket) => {
         callback( id );//primero sin estas dos lineas
         //es como un feedback de que que todo se ejecuta correctamente
 
-        //socket.broadcast.emit('enviar-mensaje', payload );
-       socket.emit('enviar-mensaje', payload );
+        socket.broadcast.emit('enviar-mensaje', payload );
+       //socket.emit('enviar-mensaje', payload );
 
     })
 
