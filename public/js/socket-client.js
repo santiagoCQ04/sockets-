@@ -8,8 +8,6 @@ const btnEnviar  = document.querySelector('#btnEnviar');
 
 const socket = io();
 
-
-
 socket.on('connect', () => {
     // console.log('Conectado');
 
@@ -42,9 +40,6 @@ btnEnviar.addEventListener( 'click', () => {
     
     socket.emit( 'enviar-mensaje', payload, ( id ) => {
         console.log('Desde el server', id );
-    });// el tercer elemento es un callback para responder
-        // por el mismo medio, util por ejemplo cuando se 
-        //guarda en una bd y se devuelve la restpusta.
-        //hacer primero el ejemplo hasta payload.
+    });
 
 });
