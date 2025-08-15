@@ -1,17 +1,17 @@
-import { Component } from "react"
-import burgers from "../views/burgers.js"
-import  perros_y_salchipapas from "../views/dogs and sausages and fries.js"
-import drinks from "../views/drinks.js"
-import extra_meals from "../views/extra meals.js"
-import presentacion from "../views/presentation.js"
+
+import burgers from "../views/burgers.vue"
+import dogs_and_sausages_and_fries from "../views/dogs and sausages and fries.vue"
+import drinks from "../views/drinks.vue"
+import extra_meals from "../views/extra meals.vue"
+import presentation from "../views/presentation.vue"
 import { createRouter, createWebHashHistory } from "vue-router"
 
 const routes = [
-    {path: "/", Component:{presentacion}},
-    {path: "/extra_meals", Component:{extra_meals}},
-    {path: "/drinks", Component:{drinks}},
-    {path: "/perros_y_salchipapas", Component:{perros_y_salchipapas}},
-    {path: "burgers", Component:{burgers}}
+    {path: "/", component:presentation},
+    {path: "/extra_meals", component:extra_meals},
+    {path: "/drinks", component:drinks},
+    {path: "/dogs_and_sausages_and_fries", component:dogs_and_sausages_and_fries},
+    {path: "/burgers", component:burgers}
 
 ]
 export const router = createRouter({

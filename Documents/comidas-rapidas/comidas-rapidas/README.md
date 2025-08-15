@@ -1,5 +1,37 @@
-# Vue 3 + Vite
+# Comidas Rápidas - Aplicación Vue.js
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplicación web desarrollada con Vue.js, Vite y Quasar para mostrar menús de comidas rápidas.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Tecnologías utilizadas
+
+- Vue.js 3
+- Vite
+- Quasar Framework
+- Vue Router
+- SASS
+
+## Instalación y desarrollo
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
+
+# Vista previa de la construcción
+npm run preview
+```
+
+## Despliegue
+
+Este proyecto está configurado para desplegarse en Netlify desde un repositorio que contiene múltiples proyectos.
+
+### Configuración de Netlify
+
+- **Directorio base**: `comidas-rapidas`
+- **Comando de construcción**: `cd comidas-rapidas && npm install && npm run build`
+- **Directorio de publicación**: `comidas-rapidas/dist`

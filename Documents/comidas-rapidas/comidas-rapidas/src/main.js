@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { Quasar } from 'quasar'
 import {router} from './routes/routes.js'
-//import './style.css'
+import './style.css'
 
 // Import icon libraries
 import '@quasar/extras/material-icons/material-icons.css'
